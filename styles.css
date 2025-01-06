@@ -1,0 +1,24 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Video sections */
+.video-section {
+    width: 100%;
+    height: auto;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    display: block;
+}

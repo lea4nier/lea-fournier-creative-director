@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-section {
+            position: relative;
+            width: 100%;
+
+
+
+        }
+
+        video,
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="video-section">
+        <video autoplay muted playsinline>
+            <source src="assets/videos/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="video-section">
+        <video autoplay muted playsinline>
+            <source src="assets/videos/2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="video-section">
+        <video autoplay muted playsinline>
+            <source src="assets/videos/3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
