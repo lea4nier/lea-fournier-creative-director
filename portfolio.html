@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .video-container .hover-description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .video-container:hover .hover-description {
+            display: flex;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/images/header.p.png" alt="Header" class="header-image">
+    <div id="video-gallery" class="video-gallery">
+        <!-- Local Video 1 -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="assets/videos/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hover-description">Description for Local Video 1</div>
+        </div>
+        <!-- YouTube Video with Local Video Thumbnail -->
+        <div class="video-container">
+            <a href="https://lea4nier.github.io/girlzluvclothez/video.html" data-video="true">
+                <video autoplay muted loop>
+                    <source src="assets/videos/gulrz.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hover-description">3D model animation created by me in Blender for the video game "Girlz Luv
+                    Clothez!" </div>
+            </a>
+        </div>
+        <!-- Local Video 2 -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="assets/videos/3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hover-description">Description for Local Video 2</div>
+        </div>
+    </div>
+</body>
+
+</html>
