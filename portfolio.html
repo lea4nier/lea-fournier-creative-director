@@ -31,6 +31,14 @@
             height: auto;
         }
 
+        .video-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
         .video-container video {
             width: 100%;
             height: auto;
@@ -54,6 +62,8 @@
             padding: 10px;
             box-sizing: border-box;
             border-radius: 10px;
+            pointer-events: none;
+            /* Prevent interference with click events */
         }
 
         .video-container:hover .hover-description {
@@ -72,32 +82,29 @@
 <body>
     <img src="assets/images/header.p.png" alt="Header" class="header-image">
     <div id="video-gallery" class="video-gallery">
-        <!-- Local Video 1 -->
+        <!-- Image Thumbnail for Video 1 -->
         <div class="video-container">
-            <video autoplay muted loop>
-                <source src="assets/videos/1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <a href="https://www.youtube.com/watch?v=iuRFtGOFQC0" target="_blank">
+                <img src="assets/images/ari.png" alt="Thumbnail for Video 1">
+            </a>
             <div class="hover-description">Description for Local Video 1</div>
         </div>
         <!-- YouTube Video with Local Video Thumbnail -->
         <div class="video-container">
-            <a href="https://lea4nier.github.io/girlzluvclothez/video.html" data-video="true">
+            <a href="https://lea4nier.github.io/girlzluvclothez/video.html" target="_blank">
                 <video autoplay muted loop>
                     <source src="assets/videos/gulrz.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div class="hover-description">3D model animation created by me in Blender for the video game "Girlz Luv
-                    Clothez!" </div>
+                <div class="hover-description">Description for the YouTube Video</div>
             </a>
         </div>
-        <!-- Local Video 2 -->
+        <!-- Image Thumbnail for Video 3 -->
         <div class="video-container">
-            <video autoplay muted loop>
-                <source src="assets/videos/3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hover-description">Description for Local Video 2</div>
+            <a href="https://www.youtube.com/watch?v=kmLSi3d8E8U" target="_blank">
+                <img src="assets/images/helen.png" alt="Thumbnail for Video 3">
+            </a>
+            <div class="hover-description">Description for Local Video 3</div>
         </div>
     </div>
 </body>
