@@ -80,6 +80,47 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        nav {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: rgb(255, 161, 239);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: deeppink;
+        }
+    </style>
+
     <img src="assets/images/header.p.png" alt="Header" class="header-image">
     <div id="video-gallery" class="video-gallery">
         <!-- Image Thumbnail for Video 1 -->
@@ -87,7 +128,7 @@
             <a href="https://www.youtube.com/watch?v=iuRFtGOFQC0" target="_blank">
                 <img src="assets/images/ari.png" alt="Thumbnail for Video 1">
             </a>
-            <div class="hover-description">Description for Local Video 1</div>
+            <div class="hover-description">Creative Direction/Producer: "Waves of Discard"</div>
         </div>
         <!-- YouTube Video with Local Video Thumbnail -->
         <div class="video-container">
@@ -96,7 +137,8 @@
                     <source src="assets/videos/gulrz.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div class="hover-description">Description for the YouTube Video</div>
+                <div class="hover-description">3D Model Animation designed by me in Blender for Video Game project I
+                    designed</div>
             </a>
         </div>
         <!-- Image Thumbnail for Video 3 -->
@@ -112,7 +154,7 @@
                 <img src="assets/images/pose.png" alt="Thumbnail for Video 4"
                     style="width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
             </a>
-            <div class="hover-description">Description for Local Video 4</div>
+            <div class="hover-description">Lyric Video created by me</div>
         </div>
         <!-- Placeholder for Video 5 -->
         <div class="video-container">
@@ -120,7 +162,7 @@
                 <img src="assets/images/love.png" alt="Thumbnail for Video 5"
                     style="width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
             </a>
-            <div class="hover-description">Description for Local Video 5</div>
+            <div class="hover-description">Documentary Produced/Directed by me</div>
         </div>
         <!-- Placeholder for Video 6 -->
         <div class="video-container">
@@ -128,7 +170,7 @@
                 <img src="assets/images/george.png" alt="Thumbnail for Video 6"
                     style="width: 100%; height: auto; border-radius: 10px; object-fit: cover;">
             </a>
-            <div class="hover-description">Description for Local Video 6</div>
+            <div class="hover-description">Creative Direction/Producer: "Waves of Discard</div>
         </div>
     </div>
 </body>

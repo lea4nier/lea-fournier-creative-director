@@ -38,6 +38,46 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        nav {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: rgb(255, 161, 239);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: deeppink;
+        }
+    </style>
     <img src="assets/images/4.svg" alt="Resume">
     <img src="assets/images/5.svg" class="video-like" alt="Resume Video-like">
     <iframe src="assets/pdf/resume.pdf" title="Resume PDF"></iframe>
