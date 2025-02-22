@@ -7,15 +7,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .video-section {
+        .image-section {
             position: relative;
             width: 100%;
-
-
-
         }
 
-        video,
         img {
             display: block;
             width: 100%;
@@ -82,35 +78,22 @@
             color: deeppink;
         }
     </style>
-    <section class="video-section">
-        <video autoplay muted playsinline>
-            <source src="assets/videos/1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <section class="video-section">
-        <video autoplay muted playsinline>
-            <source src="assets/videos/2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <section class="video-section">
-        <video autoplay muted playsinline>
-            <source src="assets/videos/3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let videos = document.querySelectorAll("video");
 
-            videos.forEach(video => {
-                video.play().catch(error => {
-                    console.log("Autoplay prevented:", error);
-                });
-            });
-        });
-    </script>
+    <section class="image-section">
+        <a href="resume.html">
+            <img src="assets/images/1.png" alt="Image 1">
+        </a>
+    </section>
+    <section class="image-section">
+        <a href="portfolio.html">
+            <img src="assets/images/2.png" alt="Image 2">
+        </a>
+    </section>
+    <section class="image-section">
+        <a href="resume.html">
+            <img src="assets/images/3.png" alt="Image 3">
+        </a>
+    </section>
 
 
     <script src="script.js"></script>
